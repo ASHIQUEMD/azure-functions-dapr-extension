@@ -3,6 +3,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Microsoft.Azure.WebJobs.Extensions.Dapr</PackageId>    
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- Default Version for dev -->
+    <Version>99.99.99</Version>
   </PropertyGroup>
 
   <!-- Additional Nuget package properties. -->
@@ -14,6 +16,8 @@
   <PropertyGroup>
     <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <!-- Microsoft 1st party dependencies -->
