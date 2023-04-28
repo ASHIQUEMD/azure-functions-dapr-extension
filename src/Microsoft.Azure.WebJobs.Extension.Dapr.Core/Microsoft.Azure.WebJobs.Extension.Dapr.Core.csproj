@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Microsoft.Azure.WebJobs.Extensions.Dapr.Core</PackageId>
+  </PropertyGroup>
+
+  <!-- Additional Nuget package properties. -->
+  <PropertyGroup>
+    <Description>Core classes for Dapr extension</Description>
+    <Company>Microsoft</Company>
+    <Authors>Microsoft</Authors>
+    <Product>Dapr extension for Azure functions</Product>
+    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <PackageTags>Azure-Functions, Microsoft, Azure, Dapr, Isolated</PackageTags>
+  </PropertyGroup>
+
+</Project>

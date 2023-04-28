@@ -1,6 +1,4 @@
 <Project>
-  <Import Project="$(MSBuildThisFileDirectory)..\properties\dapr_managed.props" />
-
   <PropertyGroup>
     <!-- Set Output Path for tests-->
     <OutputPath>$(RepoRoot)bin\$(Configuration)\test\$(MSBuildProjectName)\</OutputPath>

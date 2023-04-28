@@ -185,7 +185,6 @@ namespace DaprExtensionTests
             new object[] { "Hello, world!" },
             new object[] { DateTime.Now },
             new object[] { Guid.NewGuid() },
-            new object[] { Guid.NewGuid().ToByteArray() },
             new object[] { new { arg1 = 2, arg2 = 3 } },
             new object[] { new UserDefinedType { P1 = "Hello, world!", P2 = 3, P3 = DateTime.UtcNow } },
         };

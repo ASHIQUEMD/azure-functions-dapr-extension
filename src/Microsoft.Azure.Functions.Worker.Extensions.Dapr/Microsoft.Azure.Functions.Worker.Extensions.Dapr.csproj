@@ -1,29 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Microsoft.Azure.Functions.Worker.Extensions.Dapr</PackageId>
-    <Description>DAPR extension for Azure Functions</Description>
-    <Company>Microsoft</Company>
-    <Authors>Microsoft</Authors>
-    <Product>DAPR Extension</Product>
-    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <!--TODO: Need to figure out how to set the version number.-->
-    <SupportedVersion>0.0.0-preview.0.89</SupportedVersion>
-    <PackageTags>Microsoft Azure WebJobs AzureFunctions Isolated DotnetIsolated DAPR Worker</PackageTags>
   </PropertyGroup>
 
   <!-- Additional Nuget package properties. -->
   <PropertyGroup>
-    <Description>This extension adds bindings for Dapr</Description>
+    <Description>Dapr extension for Azure functions using the out-of-process worker</Description>
+    <Company>Microsoft</Company>
+    <Authors>Microsoft</Authors>
+    <Product>Dapr extension for Azure functions</Product>
+    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <PackageTags>Azure-Functions, Microsoft, Azure, Dapr, Isolated</PackageTags>
   </PropertyGroup>
 
   <!-- Use C# 9.0 features -->
   <PropertyGroup>
     <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Microsoft.Azure.Functions.Worker.Extensions.Dapr</Title>
   </PropertyGroup>
 
   <ItemGroup>
@@ -41,18 +39,7 @@
     <Compile Include="..\..\.stylecop\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
   </ItemGroup>
 
-  <!-- Project dependency -->
   <ItemGroup>
-    <ProjectReference Include="..\Microsoft.Azure.WebJobs.Extensions.Dapr\Microsoft.Azure.WebJobs.Extensions.Dapr.csproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Azure.WebJobs.Extensions.Dapr.Core\Microsoft.Azure.WebJobs.Extensions.Dapr.Core.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <AssemblyAttribute Include="Microsoft.Azure.Functions.Worker.Extensions.Abstractions.ExtensionInformationAttribute">
-      <_Parameter1>Microsoft.Azure.WebJobs.Extensions.Dapr</_Parameter1>
-      <_Parameter2>$(SupportedVersion)</_Parameter2>
-    </AssemblyAttribute>
-  </ItemGroup>
-
 </Project>
